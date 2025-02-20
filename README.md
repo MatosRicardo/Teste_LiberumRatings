@@ -40,15 +40,16 @@ Este projeto é um CRUD simples desenvolvido com React, Tailwind, React Router e
 - Atualizar um item
 - Deletar um item
 
+---
+
 # API Cadastro de Empresas
 
-Esta API permite o gerenciamento de um sistema de cadastro de empresas. Foi desenvolvida utilizando Node.js, mas pode ser implementada em qualquer linguagem de programação.
+Esta API permite o gerenciamento de um sistema de cadastro de empresas. Foi desenvolvida utilizando Node.js.
 
 ## Tecnologias Utilizadas
 
-- Node.js (desejável)
-- Express (se aplicável)
-- Banco de Dados (MongoDB, PostgreSQL ou outro de sua escolha)
+- Node.js
+- Express
 - Postman para testes
 
 ## Instalação
@@ -97,11 +98,3 @@ A entidade `Empresa` contém os seguintes campos:
 - O campo **cnpj** deve ser único e válido
 - A **data_registro** deve ser uma data válida
 - As requisições devem ser testadas via **Postman** ou ferramenta similar
-
-## Testando a API
-
-1. Abra o **Postman**
-2. Configure as requisições conforme as rotas da API
-3. Envie as requisições e verifique os retornos
-
-Essa API possibilita um cadastro eficiente de empresas, garantindo a integridade dos dados e a validação adequada das informações.
