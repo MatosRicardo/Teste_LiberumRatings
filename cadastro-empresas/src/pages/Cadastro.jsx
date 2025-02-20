@@ -98,12 +98,12 @@ export default function Cadastro() {
         <div className="mt-10 flex gap-1">
           <button
             type="submit"
-            className="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-2"
+            className="bg-blue-600 text-white font-bold py-2 px-4 rounded mt-2 hover:cursor-pointer"
           >
             Cadastrar
           </button>
           <Link to="/">
-            <button className="bg-black text-white font-bold py-2 px-4 rounded mt-2">
+            <button className="bg-black text-white font-bold py-2 px-4 rounded mt-2 hover:cursor-pointer">
               Voltar
             </button>
           </Link>
