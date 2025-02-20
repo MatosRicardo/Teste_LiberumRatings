@@ -33,86 +33,75 @@ Este projeto é um CRUD simples desenvolvido com React, Tailwind, React Router e
    npm run dev
    ```
 
----
-
-## API Empresas
+## Funcionalidades do CRUD
 
 - Criar um item
 - Listar itens
 - Atualizar um item
 - Deletar um item
 
-API Cadastro de Empresas
+# API Cadastro de Empresas
 
-Esta API permite o gerenciamento de um sistema de cadastro de empresas. Foi desenvolvida utilizando Node.js..
+Esta API permite o gerenciamento de um sistema de cadastro de empresas. Foi desenvolvida utilizando Node.js, mas pode ser implementada em qualquer linguagem de programação.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-Node.js (desejável)
+- Node.js (desejável)
+- Express (se aplicável)
+- Banco de Dados (MongoDB, PostgreSQL ou outro de sua escolha)
+- Postman para testes
 
-Express (se aplicável)
-
-Postman para testes
-
-Instalação
+## Instalação
 
 Clone o repositório:
 
+```bash
 git clone https://github.com/seu-usuario/api-cadastro-empresas.git
 cd api-cadastro-empresas
+```
 
 Instale as dependências:
 
+```bash
 npm install
+```
 
 Inicie o servidor:
 
+```bash
 npm start
+```
 
-Estrutura da Entidade Empresa
+## Estrutura da Entidade Empresa
 
-A entidade Empresa contém os seguintes campos:
+A entidade `Empresa` contém os seguintes campos:
 
-id: Identificador único
+- **id**: Identificador único
+- **razao_social**: Nome da empresa
+- **cnpj**: Número único do CNPJ
+- **data_registro**: Data de registro da empresa
+- **status**: Status ativo ou inativo
+- **criado_em**: Data de criação do registro
+- **atualizado_em**: Data da última atualização
 
-razao_social: Nome da empresa
+## Rotas da API
 
-cnpj: Número único do CNPJ
+- `GET /empresa` - Listar todas as empresas
+- `GET /empresa/:id` - Obter detalhes de uma empresa específica
+- `POST /empresa` - Criar uma nova empresa
+- `PUT /empresa/:id` - Atualizar uma empresa existente
+- `DELETE /empresa/:id` - Deletar uma empresa
 
-data_registro: Data de registro da empresa
+## Validações e Erros
 
-status: Status ativo ou inativo
+- O campo **cnpj** deve ser único e válido
+- A **data_registro** deve ser uma data válida
+- As requisições devem ser testadas via **Postman** ou ferramenta similar
 
-criado_em: Data de criação do registro
+## Testando a API
 
-atualizado_em: Data da última atualização
-
-Rotas da API
-
-GET /empresa - Listar todas as empresas
-
-GET /empresa/:id - Obter detalhes de uma empresa específica
-
-POST /empresa - Criar uma nova empresa
-
-PUT /empresa/:id - Atualizar uma empresa existente
-
-DELETE /empresa/:id - Deletar uma empresa
-
-Validações e Erros
-
-O campo cnpj deve ser único e válido
-
-A data_registro deve ser uma data válida
-
-As requisições devem ser testadas via Postman ou ferramenta similar
-
-Testando a API
-
-Abra o Postman
-
-Configure as requisições conforme as rotas da API
-
-Envie as requisições e verifique os retornos
+1. Abra o **Postman**
+2. Configure as requisições conforme as rotas da API
+3. Envie as requisições e verifique os retornos
 
 Essa API possibilita um cadastro eficiente de empresas, garantindo a integridade dos dados e a validação adequada das informações.
