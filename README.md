@@ -15,7 +15,7 @@ Este projeto é um CRUD simples desenvolvido com React, Tailwind, React Router e
 
    ```bash
    git clone https://github.com/seu-usuario/crud-react-tailwind.git
-   cd crud-react-tailwind
+   cd cadastro-empresas
    ```
 
 2. Instale as dependências:
@@ -58,7 +58,7 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/seu-usuario/api-cadastro-empresas.git
-cd api-cadastro-empresas
+cd api-empresas
 ```
 
 Instale as dependências:
